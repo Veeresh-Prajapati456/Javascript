@@ -5,18 +5,18 @@ let name = "Veeresh"
 
 
 //There are two ways to check the dataType of variable
-console.log(typeof score);
+// console.log(typeof score);
 /*         OR           */
 // console.log(typeof (score));
 
 //To change value from string to Number
 
-// let valueInNumber = Number(point)
+let valueInNumber = Number(point)
 // console.log(typeof valueInNumber);
 
 // console.log(valueInNumber);
 
-// let valInNumber = Number(run)
+let valInNumber = Number(run)
 // console.log(typeof valInNumber);
 // console.log(typeof run);
 // console.log(valInNumber);
@@ -34,9 +34,9 @@ let isLoggedIn=1 //output is true
 // let isLoggedIn=""    //output is false
 // let isLoggedIn="Veeresh"    //output is true
 let booleanIsLoggedIn= Boolean(isLoggedIn)
-console.log(booleanIsLoggedIn);
-console.log(isLoggedIn);
-console.log(typeof booleanIsLoggedIn);
+// console.log(booleanIsLoggedIn);
+// console.log(isLoggedIn);
+// console.log(typeof booleanIsLoggedIn);
 
 
 // conversion
@@ -48,5 +48,48 @@ console.log(typeof booleanIsLoggedIn);
 let someNumber = 33
 
 let stringNumber = String(someNumber)
-console.log(stringNumber);
-console.log(typeof stringNumber);
+// console.log(stringNumber);
+// console.log(typeof stringNumber);
+
+
+// *********************Operations*********************
+
+let value = 3
+let negValue = -value
+// console.log(negValue);
+
+// console.log(2+2); //output: 4
+// console.log(2*3); //6
+// console.log(2**4); //16
+// console.log(2/7); //0.28
+// console.log(2%12); //2
+
+
+let str1 = "Hello"
+let str2 = " Veeresh"
+
+let str3 =str1 + str2
+// console.log(str3);
+
+// console.log("1" + 2); //output: 12
+// console.log(1 + "2"); // 12
+// console.log("1" + "2"); // 12
+// console.log("1" + 2 + 2); // 122
+// console.log(1 + 2 + "2"); // 32
+// console.log(2 + 4 * 5 + "2"); // 222
+// console.log((2 + 4) * 5 + "2"); // 302
+// console.log(true); // true
+// console.log(+true); // 1
+// console.log(+""); // 0
+
+
+let num1, num2, num3
+num1=num2=num3=2+2
+
+console.log(num1, num2,num3);
+
+let gameCounter=100
+++gameCounter
+// gameCounter++
+
+console.log(gameCounter);
