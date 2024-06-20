@@ -11,6 +11,8 @@ console.log(2 < false); //false
 console.log(1 >= true); //true
 console.log("" > true); //false
 console.log("" > false); //false
+console.log("" < true); // true
+console.log("" < false); //false
 
 
 
