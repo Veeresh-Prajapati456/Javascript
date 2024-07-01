@@ -50,3 +50,35 @@ const myFunction = function(){
 
 console.log(typeof heros); //typeof (heros) is Object 
 console.log(typeof myFunction); //typeof (myFunction) is Object Function
+
+
+
+
+//**************************************************
+
+// Two Types of Memory
+//---Stack Memory(In Primitive Stack Memory is used)
+//---Whenever Stack Memeory is used then always receive a copy of variable
+
+//---Heap Memory(In Non Primitive(Reference) Heap Memory is used)
+//---whenever Heap Memory is used then always receive a reference (original value) of a variable.
+
+let myName = "Ankit"
+anotherName = myName
+anotherName = "Veeresh"
+
+console.log(myName);
+console.log(anotherName);
+
+
+let userOne ={
+    email:"veeresh@gmail.com",
+    upi: "veeresh@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "veeresh@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
