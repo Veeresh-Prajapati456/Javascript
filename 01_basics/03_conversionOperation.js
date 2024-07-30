@@ -9,6 +9,21 @@ let name = "Veeresh"
 /*         OR           */
 // console.log(typeof (score));
 
+
+//if  we assign value(null, undefined) to variable then what happen, let see
+
+// score = "veeresh";
+// let valueInNum = Number(score);
+// console.log(typeof valueInNum);
+// console.log(valueInNum);
+
+
+// score = undefined;
+// let valueInNum = Number(score);
+// console.log(typeof valueInNum);
+// console.log(valueInNum);
+
+
 //To change value from string to Number
 
 let valueInNumber = Number(point)
