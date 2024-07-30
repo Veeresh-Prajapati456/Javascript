@@ -14,3 +14,4 @@ city = "Delhi"
 
 /* To print Data in Tabular Form then, use console.table([varname1, varname2, varname3]) */
 console.table([accountId, accountEmail, accountPassword, accountState, city])
+ 
