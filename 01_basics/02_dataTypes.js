@@ -29,7 +29,7 @@ null-----empty value(standalone value)
 
 undefined----value is not assign
 
-Symbol----unique(Example--used in React to make unique components, also used in figma to define )individual or unique component)
+Symbol----unique(Example--used in React and also used to find unique components which is in react, also used in figma, to define individual or unique component
 
 */
 
@@ -37,6 +37,7 @@ Symbol----unique(Example--used in React to make unique components, also used in 
 //to check the type of variable 
 console.log(typeof age);  ///it will return the type of (age) as "number" because we declare number to the age variable
 /*          OR          */
+//to check the type of value
 console.log(typeof "Veeresh");
 
 
