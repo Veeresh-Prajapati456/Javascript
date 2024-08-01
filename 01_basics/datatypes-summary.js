@@ -1,3 +1,5 @@
+//Types of DataTypes
+
 //  # Primitive DataTypes
 
     /* 7 Types- String, Number, Boolean, Null, undefined, 
@@ -14,7 +16,7 @@
     const id = Symbol('123')  //use of Symbol
     const anotherId = Symbol('123')  //use of Symbol
 
-    // console.log(id === anotherId);
+    // console.log(id === anotherId); //output : False
 
     const bigNumber = 3456720838746477n  
 
@@ -31,11 +33,11 @@
 /* JavaScript is a dynamically typed language, which means that data types of variables are determined by the value they hold at runtime and can change throughout the program as we assign different values to them. */
 
 
-// Reference (Non-Primitive) DataTypes
+// Reference (Non-Primitive) DataTypes 
 
-// Array, Objects, functions 
+// Array, Objects, Functions 
 
-//All non primitive datatype is Object
+//All non primitive datatype is Object.
 
 const heros = ["shaktiman", "naagraj", "doga" ];
 
@@ -49,7 +51,7 @@ const myFunction = function(){
 }
 
 console.log(typeof heros); //typeof (heros) is Object 
-console.log(typeof myFunction); //typeof (myFunction) is Object Function
+console.log(typeof myFunction); //typeof (myFunction) is Function or we can say that (Object Function)
 
 
 
@@ -57,10 +59,10 @@ console.log(typeof myFunction); //typeof (myFunction) is Object Function
 //**************************************************
 
 // Two Types of Memory
-//---Stack Memory(In Primitive Stack Memory is used)
+//---Stack Memory(In Primitive, Stack Memory is used)
 //---Whenever Stack Memeory is used then always receive a copy of variable
 
-//---Heap Memory(In Non Primitive(Reference) Heap Memory is used)
+//---Heap Memory(In Non Primitive(Reference), Heap Memory is used)
 //---whenever Heap Memory is used then always receive a reference (original value) of a variable.
 
 let myName = "Ankit"
@@ -81,4 +83,4 @@ let userTwo = userOne
 userTwo.email = "veeresh@gmail.com"
 
 console.log(userOne.email);
-console.log(userTwo.email);
+console.log(userTwo.email); 
