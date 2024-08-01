@@ -12,6 +12,7 @@ const repoCount = 50
 
 
 //Second Way to declare String
+// let gameName = new String("Veeresh")
 let gameName = new String("Veeresh-Kumar-Prajapati")
 // console.log(gameName);
 
@@ -29,7 +30,7 @@ const newString = gameName.substring(0,5) //start number (0), end Number (5)
 console.log(newString);
 
 const anotherString = gameName.slice(-10,9)  //we can use negative value as well as positive value
-//Output: ereshK
+//Output: ereshK 
 console.log(anotherString);
 
 
