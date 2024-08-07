@@ -25,7 +25,7 @@ let myDate = new Date()
 
 // let myCreateDate = new Date(2023, 0, 23)
 // console.log(myCreateDate);
-
+// console.log(myCreateDate.toString());
 // console.log(myCreateDate.toDateString()); //Return Date 
 
 
@@ -33,14 +33,18 @@ let myDate = new Date()
 // console.log(myCreateDate.toLocaleString());   //Return Date with Time
 
 
-// let myCreateDate = new Date("2023 01-14")
+let myCreateDate = new Date("2023-01-14")
 // console.log(myCreateDate.toLocaleString()); //Return Date in (YYYY-MM-DD) format
 
 // let myCreateDate = new Date("01-14-2023")
 // console.log(myCreateDate.toLocaleString()); //Return Date in (MM-DD-YYYY) format
 
 
+// let myTimeStamp = new Date()
+/*          OR               both are same thing*/
 let myTimeStamp = Date.now()
+// console.log(Date.now());
+
 // console.log(myTimeStamp); //Return value in miliseconds from (1 Jan 1970 to till given date) 
 
 // console.log(myCreateDate.getTime()); //Return value from (1 Jan 1970 to myCreatedDate variable date) in miliseconds
@@ -60,20 +64,25 @@ let newDate = new Date()
 
 // console.log(newDate.getDate()); //Return Current Date
 
-// console.log(newDate.getMonth());
+console.log(newDate.getTime()); // Return Value in Miliseconds from ( 1 Jan 1970 to Current Time Eg: 1722936890087 )
 
-// console.log(newDate.getTime());
-// console.log(newDate.getMinutes());
-// console.log(newDate.getFullYear());
-// console.log(newDate.getDay());
-// console.log(newDate.getHours());
+console.log(newDate.getMinutes());
+
+// console.log(newDate.getMonth() +1); //Return Current month, and we use ( +1 ) because month counting start from ( 0 ) so, to prevent confusion we use ( +1 ) to arrange the month counting in real order
+
+// console.log(newDate.getFullYear()); //Return current Year
+
+// console.log(newDate.getDay()); //Return current Day (Eg: 2)
+
+// console.log(newDate.getHours()); // it will return the left hours from the current time (Eg: Current Time 3:00 PM and 9 hours left to 12:00 so, it will Return Value ( 9 ))
 
 
 
 //String Interpolation
 // `${newDate.getFullYear()} and the time is ${newDate.getTime()}`
 
-//Very Important Method
-// newDate.toLocaleString('default', {
-//     weekday: "Long"
-// })
+//Very Important Date Method
+newDate.toLocaleString('default', {
+    weekday: "Long",            //we can define as many property
+
+})
