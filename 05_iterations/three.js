@@ -45,6 +45,10 @@ for (const [key, value] of map) {
 
 
 // Objects are not iterable
+// For-of loop it not working with objects
+// for-of loop is work with Maps
+
+
 // const myObject = {
 //     game1: 'NFS',
 //     game2: 'Spiderman'
