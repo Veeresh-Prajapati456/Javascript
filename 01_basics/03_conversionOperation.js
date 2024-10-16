@@ -14,14 +14,20 @@ let name = "Veeresh"
 
 // score = "veeresh";
 // let valueInNum = Number(score);
-// console.log(typeof valueInNum);
-// console.log(valueInNum);
+// console.log(typeof valueInNum);  //return Number
+// console.log(valueInNum);   // return NaN
+
+
+// score = null;
+// let valueInNum = Number(score);
+// console.log(typeof valueInNum);  //Return Number
+// console.log(valueInNum);         // Return 0
 
 
 // score = undefined;
 // let valueInNum = Number(score);
-// console.log(typeof valueInNum);
-// console.log(valueInNum);
+// console.log(typeof valueInNum);  //Return Number
+// console.log(valueInNum);         // Return 0
 
 
 //To change value from string to Number
@@ -40,14 +46,16 @@ let valInNumber = Number(run)
 //console.log(typeof (valuInNumber));
 
 //"33" => 33 easily convert in number
-//but "33abc" => after conversion it will give output NaN but type is Number
+//but "33abc" => after conversion it will give output "NaN", because it is not a pure number, but type is Number
 //true => 1
 //false => 0
 
 // conversion
-let isLoggedIn=1 //output is true
-// let isLoggedIn=""    //output is false
-// let isLoggedIn="Veeresh"    //output is true
+let isLoggedIn= 1             //output is true
+// let isLoggedIn= "Veeresh" //output is true
+// let isLoggedIn= ""       //output is false
+// let isLoggedIn= 0       //output is false
+
 let booleanIsLoggedIn= Boolean(isLoggedIn)
 // console.log(booleanIsLoggedIn);
 // console.log(isLoggedIn);
@@ -56,15 +64,16 @@ let booleanIsLoggedIn= Boolean(isLoggedIn)
 
 // conversion
 //1 => true;
+//"veeresh" => true
 //0 => false
 //"" => false
-//"veeresh" => true
+
 
 let someNumber = 33
 
 let stringNumber = String(someNumber)
-// console.log(stringNumber);
-// console.log(typeof stringNumber);
+console.log(stringNumber);           //Return 33
+console.log(typeof stringNumber);   // Return String
 
 
 // *********************Operations*********************
