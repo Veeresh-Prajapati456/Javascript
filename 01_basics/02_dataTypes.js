@@ -25,7 +25,7 @@ string
 
 boolean
 
-null-----empty value(standalone value)
+null-----empty value(standalone value)  // null is a representation of empty value
 
 undefined----value is not assign
 
