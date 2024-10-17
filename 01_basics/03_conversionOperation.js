@@ -27,23 +27,26 @@ let name = "Veeresh"
 // score = undefined;
 // let valueInNum = Number(score);
 // console.log(typeof valueInNum);  //Return Number
-// console.log(valueInNum);         // Return 0
+// console.log(valueInNum);         // Return NaN
 
 
 //To change value from string to Number
 
-let valueInNumber = Number(point)
-// console.log(typeof valueInNumber);
+// let valueInNumber = Number(point)
+// console.log(typeof valueInNumber); //Return Number
+// console.log(valueInNumber);        // Return NaN
 
-// console.log(valueInNumber);
 
-let valInNumber = Number(run)
-// console.log(typeof valInNumber);
-// console.log(typeof run);
-// console.log(valInNumber);
+// let valInNumber = Number(run)
+// console.log(typeof valInNumber);  // Return Number
+// console.log(typeof run);          // Return Object
+// console.log(valInNumber);         // Return 0
 
-//let valuInNumber=Number(name)
-//console.log(typeof (valuInNumber));
+
+// let valuInNumber=Number(name)
+// console.log(typeof (valuInNumber));    //Return Number
+// console.log(valuInNumber);            // Return NaN
+
 
 //"33" => 33 easily convert in number
 //but "33abc" => after conversion it will give output "NaN", because it is not a pure number, but type is Number
@@ -57,9 +60,9 @@ let isLoggedIn= 1             //output is true
 // let isLoggedIn= 0       //output is false
 
 let booleanIsLoggedIn= Boolean(isLoggedIn)
-// console.log(booleanIsLoggedIn);
-// console.log(isLoggedIn);
-// console.log(typeof booleanIsLoggedIn);
+// console.log(booleanIsLoggedIn);          //Return true
+// console.log(isLoggedIn);                // Return 1
+// console.log(typeof booleanIsLoggedIn); // Return boolean
 
 
 // conversion
@@ -72,15 +75,16 @@ let booleanIsLoggedIn= Boolean(isLoggedIn)
 let someNumber = 33
 
 let stringNumber = String(someNumber)
-console.log(stringNumber);           //Return 33
-console.log(typeof stringNumber);   // Return String
+// console.log(stringNumber);           //Return 33
+// console.log(typeof stringNumber);   // Return String
 
 
 // *********************Operations*********************
 
 let value = 3
 let negValue = -value
-// console.log(negValue);
+// console.log(negValue);  //Output: -3
+
 
 // console.log(2+2); //output: 4
 // console.log(2*3); //6
@@ -95,23 +99,26 @@ let str2 = " Veeresh"
 let str3 =str1 + str2
 // console.log(str3);
 
-// console.log("1" + 2); //output: 12
+// console.log("1" + 2); //output: 12   //c
 // console.log(1 + "2"); // 12
 // console.log("1" + "2"); // 12
 // console.log("1" + 2 + 2); // 122
+// console.log(1 + 2 + "2"); // 32   // if string is in last then 
 // console.log(2 + 3 * 2 + 2 + "2"); // 102
 // console.log(2 + 4 * 5 + "2"); // 222
 // console.log((2 + 4) * 5 + "2"); // 302
 // console.log(true); // true
-// console.log(+true); // 1
+// console.log(+true); // 1   //This is bad practice
 // console.log(+""); // 0
+// console.log(""); // print (Blank Space)
+// console.log(false); // false
+// console.log(+false); // 0  // This is bad practice
 
 
 let num1, num2, num3 
-num1=num2=num3=2+2
-
-
+num1=num2=num3=2+2   //this is bad practice to assign the value in this way (2 + 2), we can simply write 4
 // console.log(num1, num2,num3);
+
 
 let gameCounter=100
 ++gameCounter
