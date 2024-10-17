@@ -2,9 +2,9 @@
 // console.log(2==1); //false
 
 
-// console.log("2" > 1);
-// console.log("02" > 1);
-// console.log("02" < 1);
+console.log("2" > 1);   //true
+console.log("02" > 1);  //true
+console.log("02" < 1);  //false
 // console.log("03" <= true); //false
 // console.log(1 > false); //true
 // console.log(2 < false); //false
@@ -28,8 +28,8 @@ That's why line no. (21 and 22) null >= 0 , null <= 0 is true, and line no. (19,
 
 
 
-console.log("2" === 2);
-console.log(null === 0);
+// console.log("2" === 2); //False
+// console.log(null === 0); //False
 
 
 
