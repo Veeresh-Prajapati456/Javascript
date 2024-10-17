@@ -1,6 +1,6 @@
-//Types of DataTypes
+//Mainly Two Types of DataTypes: (Primitive and Non- Primitive)
 
-//  # Primitive DataTypes
+//  # Primitive DataTypes (These all datatypes are call by value means copy of the value is given)
 
     /* 7 Types- String, Number, Boolean, Null, undefined, 
 
