@@ -20,7 +20,7 @@
 
     const bigNumber = 3456720838746477n  
 
-    // console.log(typeof bigNumber);
+    console.log(typeof bigNumber);
 
 
 
@@ -49,9 +49,12 @@ let myObj = {
 const myFunction = function(){
     console.log("Hello World");
 }
-
-console.log(typeof heros); //typeof (heros) is Object 
+myFunction()
 console.log(typeof myFunction); //typeof (myFunction) is Function or we can say that (Object Function)
+console.log(typeof heros); //typeof (heros) is Object 
+
+
+
 
 
 
@@ -60,7 +63,7 @@ console.log(typeof myFunction); //typeof (myFunction) is Function or we can say 
 
 // Two Types of Memory
 //---Stack Memory(In Primitive, Stack Memory is used)
-//---Whenever Stack Memeory is used then always receive a copy of variable
+//---Whenever Stack Memeory is used then always receive a copy of a variable.
 
 //---Heap Memory(In Non Primitive(Reference), Heap Memory is used)
 //---whenever Heap Memory is used then always receive a reference (original value) of a variable.
