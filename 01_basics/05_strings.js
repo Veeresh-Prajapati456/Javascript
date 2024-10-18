@@ -4,7 +4,7 @@
 let name = "Veeresh"
 const repoCount = 50
 
-// console.log(`Hello my name is ${name} and my repo Count is ${repoCount}`);
+// console.log(`Hello my name is ${name} and my repo Count is ${repoCount}`);   //This way is called String Interpolation 
 
 // //               OR
 
@@ -24,12 +24,13 @@ let gameName = new String("Veeresh-Kumar-Prajapati")
 // console.log(gameName.charAt(4)); //charater at particular index/position
 // console.log(gameName.indexOf("h")); //to check character at which index no./position
 
-const newString = gameName.substring(0,5) //start number (0), end Number (5)
+let gameZone = new String("veereshkumar")
+const newString = gameZone.substring(0,5) //start number (0), end Number (5)
 //we can not use negative value in substring
 //output: Veere
 console.log(newString);
 
-const anotherString = gameName.slice(-10,9)  //we can use negative value as well as positive value
+const anotherString = gameZone.slice(-10,9)  //we can use negative value as well as positive value
 //Output: ereshK 
 console.log(anotherString);
 
