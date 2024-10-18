@@ -66,4 +66,4 @@ const hundreds = 1000000
 
 const min = 10
 const max = 20
-console.log(Math.floor(Math.random() * (max - min +1)) +min); //to get the values in the range of min value (min = 10) that we define above, so that we get value from min = 10 to max = 20
+console.log(Math.floor(Math.random() * (max - min +1)) +min); //to get the values in the range of min value (min = 10) that we define above, so that we get value from min = 10 to max = 20 
