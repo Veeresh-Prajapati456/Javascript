@@ -2,7 +2,7 @@
 
 let myDate = new Date()
 
-// console.log(typeof myDate);
+// console.log(typeof myDate);  //Object
 
 // console.log(myDate); //Return a date object Eg: (2024-08-02T17:59:03.996Z)
 
@@ -83,6 +83,6 @@ console.log(newDate.getMinutes());
 
 //Very Important Date Method
 newDate.toLocaleString('default', {
-    weekday: "Long",            //we can define as many property
+    weekday: "Long",             //we can define as many property
 
 })
