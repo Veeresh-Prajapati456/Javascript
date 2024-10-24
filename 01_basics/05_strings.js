@@ -22,12 +22,12 @@ let gameName = new String("Veeresh-Kumar-Prajapati")
 // console.log(gameName.length); //to print the length
 // console.log(gameName.toUpperCase()); //method/Functions
 // console.log(gameName.charAt(4)); //charater at particular index/position
-// console.log(gameName.indexOf("h")); //to check character at which index no./position
+// console.log(gameName.indexOf("h")); //to check on which index no./position given character is.
 
 let gameZone = new String("veereshkumar")
-const newString = gameZone.substring(0,5) //start number (0), end Number (5)
+const newString = gameZone.substring(0,5) //start number (0), end Number (5), and also end no is excluded
 //we can not use negative value in substring
-//output: Veere
+//output: veere
 console.log(newString);
 
 const anotherString = gameZone.slice(-10,9)  //we can use negative value as well as positive value
