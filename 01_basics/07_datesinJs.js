@@ -2,38 +2,39 @@
 
 let myDate = new Date()
 
-console.log(typeof myDate);  //Object
+// console.log(typeof myDate);  //Object
 
-console.log(myDate); //Return a date object Eg: (2024-08-02T17:59:03.996Z)
+// console.log(myDate); //Return a date object Eg: (2024-08-02T17:59:03.996Z)
 
-console.log(myDate.toString()); //Return Date object in String Format Eg: (Fri Aug 02 2024 18:07:43 GMT+0000 (Coordinated Universal Time))
+// console.log(myDate.toString()); //Return a string representation of a Date Eg: (Fri Aug 24 2024 18:07:43 GMT+0000 (Coordinated Universal Time))
 
-console.log(myDate.toDateString());
+// console.log(myDate.toDateString()); //Returns a date as a string value. Eg: (Thu Oct 24 2024)
 
-console.log(myDate.toLocaleString());
+// console.log(myDate.toLocaleString()); // Converts a date and time to a string by using the current or specified locale. Eg: (10/24/2024, 2:54:00 PM)
 
-console.log(myDate.toLocaleDateString());
+// console.log(myDate.toLocaleDateString()); //Converts a date to a string by using the current or specified locale. Eg: (10/24/2024)
 
-console.log(myDate.toISOString());
+// console.log(myDate.toISOString()); //Returns a date as a string value in ISO format. Eg: (2024-10-24T14:54:00.809Z)
 
-console.log(myDate.toJSON());
+// console.log(myDate.toJSON()); // returns a string representation of that Date in the JavaScript date time string format or same as ISO format ( toISOString() ).Eg: (2024-10-24T14:54:00.809Z)
 
-console.log(myDate.toLocaleTimeString());
+// console.log(myDate.toTimeString()); //Returns a time as a string value. Eg: (18:15:56 GMT+0000 (Coordinated Universal Time))
 
-console.log(myDate.toTimeString());
+// console.log(myDate.toLocaleTimeString()); //Converts a time to a string by using the current or specified locale. Eg: (6:15:56 PM)
+
 
 
 // let myCreateDate = new Date(2023, 0, 23)
-// console.log(myCreateDate);
-// console.log(myCreateDate.toString());
-// console.log(myCreateDate.toDateString()); //Return Date 
+// console.log(myCreateDate); //Return a date object. Output: (2023-01-23T00:00:00.000Z)
+// console.log(myCreateDate.toString()); //Return a string representation of a Date.  Output: (Mon Jan 23 2023 00:00:00 GMT+0000 (Coordinated Universal Time))
+// console.log(myCreateDate.toDateString()); //Return a Date as a string value.  Output: (Mon Jan 23 2023) 
 
 
 // let myCreateDate = new Date(2023, 0, 23, 5, 3)
-// console.log(myCreateDate.toLocaleString());   //Return Date with Time
+// console.log(myCreateDate.toLocaleString());   //Return Date and Time to a string.  Output: (1/23/2023, 5:03:00 AM)
 
 
-let myCreateDate = new Date("2023-01-14")
+// let myCreateDate = new Date("2023-01-14")
 // console.log(myCreateDate.toLocaleString()); //Return Date in (YYYY-MM-DD) format
 
 // let myCreateDate = new Date("01-14-2023")
@@ -43,7 +44,7 @@ let myCreateDate = new Date("2023-01-14")
 // let myTimeStamp = new Date()
 /*          OR               both are same thing*/
 let myTimeStamp = Date.now()
-// console.log(Date.now());
+// console.log(Date.now());  //Return Date in miliseconds. Eg: (1729795407544)  calculate date from (1 jan 1970 to current date)
 
 // console.log(myTimeStamp); //Return value in miliseconds from (1 Jan 1970 to till given date) 
 
