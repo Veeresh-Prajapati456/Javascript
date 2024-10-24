@@ -2,25 +2,25 @@
 
 let myDate = new Date()
 
-// console.log(typeof myDate);  //Object
+console.log(typeof myDate);  //Object
 
-// console.log(myDate); //Return a date object Eg: (2024-08-02T17:59:03.996Z)
+console.log(myDate); //Return a date object Eg: (2024-08-02T17:59:03.996Z)
 
-// console.log(myDate.toString()); //Return Date object in String Format Eg: (Fri Aug 02 2024 18:07:43 GMT+0000 (Coordinated Universal Time))
+console.log(myDate.toString()); //Return Date object in String Format Eg: (Fri Aug 02 2024 18:07:43 GMT+0000 (Coordinated Universal Time))
 
-// console.log(myDate.toDateString());
+console.log(myDate.toDateString());
 
-// console.log(myDate.toLocaleString());
+console.log(myDate.toLocaleString());
 
-// console.log(myDate.toISOString());
+console.log(myDate.toLocaleDateString());
 
-// console.log(myDate.toJSON());
+console.log(myDate.toISOString());
 
-// console.log(myDate.toLocaleDateString());
+console.log(myDate.toJSON());
 
-// console.log(myDate.toLocaleTimeString());
+console.log(myDate.toLocaleTimeString());
 
-// console.log(myDate.toTimeString());
+console.log(myDate.toTimeString());
 
 
 // let myCreateDate = new Date(2023, 0, 23)
@@ -64,9 +64,9 @@ let newDate = new Date()
 
 // console.log(newDate.getDate()); //Return Current Date
 
-console.log(newDate.getTime()); // Return Value in Miliseconds from ( 1 Jan 1970 to Current Time Eg: 1722936890087 )
+// console.log(newDate.getTime()); // Return Value in Miliseconds from ( 1 Jan 1970 to Current Time Eg: 1722936890087 )
 
-console.log(newDate.getMinutes());
+// console.log(newDate.getMinutes());
 
 // console.log(newDate.getMonth() +1); //Return Current month, and we use ( +1 ) because month counting start from ( 0 ) so, to prevent confusion we use ( +1 ) to arrange the month counting in real order
 
@@ -82,7 +82,7 @@ console.log(newDate.getMinutes());
 // `${newDate.getFullYear()} and the time is ${newDate.getTime()}`
 
 //Very Important Date Method
-newDate.toLocaleString('default', {
-    weekday: "Long",             //we can define as many property
+// newDate.toLocaleString('default', {
+//     weekday: "Long",             //we can define as many property
 
-})
+// })
