@@ -4,9 +4,9 @@ const myArr = [11, 12, 13 , 14 ,15, 16]
 const myHeroes = ["Balvir", "Shaktiman", "NaagRaj"]
 const myArr2 = new Array(22, 23, 24, 25, "One", "Two", "Three") //  Storing a collection of multiple items under a single variable name is known as Array
 
-console.log(myArr[2]);
-console.log(myHeroes[0]);
-console.log(myArr2[5]);
+// console.log(myArr[2]);
+// console.log(myHeroes[0]);
+// console.log(myArr2[5]);
 
 //Array Methods
 
@@ -46,7 +46,7 @@ console.log(myArr2[5]);
 
 const newArr = myArr.join() //With the help of join() Method- Adds all the elements of an array into a string ( means typeof array is change into String and also array is bind) Eg:- ( 11,12,13,14,15,16 )
 // console.log(newArr); //Return Bind Array with Comma(,) seprated:   11,12,13,14,15,16
-console.log(newArr); //Return the (typeof newArr)  is "String" 
+// console.log(newArr); //Return the (typeof newArr)  is "String" 
 
 
 
@@ -76,16 +76,15 @@ console.log(newArr); //Return the (typeof newArr)  is "String"
 
 /*The splice() method is used to change an array by adding, removing, or replacing elements. This method modifies the original array.*/
 
-const mynewArr2 = myArr.splice(1, 3) //(index no. "1" is inclided and index no. "3" is also included
+// const mynewArr2 = myArr.splice(1, 3) //(index no. "1" is inclided and index no. "3" is also included
 
-console.log("C", myArr); //Return  C [ 11, 15, 16 ]
+// console.log("C", myArr); //Return  C [ 11, 15, 16 ]
 
-console.log(mynewArr2); //Return   [ 12, 13, 14 ]
+// console.log(mynewArr2); //Return   [ 12, 13, 14 ]
+
+
 
 //The splice() method is used to change an array by adding.
-
-//*******************************************************************
-
 // const arr = ["walk the dog", "go shopping", "exercise"];
 // const index = 2;
 // const value = "go to the pharmacy";
@@ -102,6 +101,16 @@ console.log(mynewArr2); //Return   [ 12, 13, 14 ]
 // const index = 2;
 // const value = "go to the pharmacy";
 // arrCopy.splice(index, 0, value);
+
+
+
+// const arr = ["walk the dog", "go shopping", "exercise"];
+// const arrCopy = [...arr];
+// const index = 2;
+// const value = "go to the pharmacy";
+// arrCopy.splice(index, 1, value); //elemnt is deleted at the end
+// console.log(arrCopy); // Output:- [ 'walk the dog', 'go shopping', 'go to the pharmacy' ]
+
 
 // console.log(arrCopy); // "walk the dog", "go shopping", "go to the pharmacy", "exercise"
 // console.log(arr); //Return Original Array
