@@ -2,11 +2,11 @@
 
 const myArr = [11, 12, 13 , 14 ,15, 16]
 const myHeroes = ["Balvir", "Shaktiman", "NaagRaj"]
-const myArr2 = new Array(22, 23, 24, 25, "One", "Two", "Three")
+const myArr2 = new Array(22, 23, 24, 25, "One", "Two", "Three") //  Storing a collection of multiple items under a single variable name is known as Array
 
-// console.log(myArr[2]);
-// console.log(myHeroes[0]);
-// console.log(myArr2[5]);
+console.log(myArr[2]);
+console.log(myHeroes[0]);
+console.log(myArr2[5]);
 
 //Array Methods
 
@@ -44,9 +44,9 @@ const myArr2 = new Array(22, 23, 24, 25, "One", "Two", "Three")
 // console.log(myArr); //Return Array: [ 11, 12, 13, 14, 15, 16 ]
 // console.log(typeof myArr); //Return the (typeof myArr)  is "Object"
 
-// const newArr = myArr.join() //With the help of join() Method we can bind the Array and the typeof Array is String
+const newArr = myArr.join() //With the help of join() Method- Adds all the elements of an array into a string ( means typeof array is change into String and also array is bind) Eg:- ( 11,12,13,14,15,16 )
 // console.log(newArr); //Return Bind Array with Comma(,) seprated:   11,12,13,14,15,16
-// console.log(newArr); //Return the (typeof newArr)  is "String" 
+console.log(newArr); //Return the (typeof newArr)  is "String" 
 
 
 
@@ -60,15 +60,15 @@ const myArr2 = new Array(22, 23, 24, 25, "One", "Two", "Three")
 
 //                  Slice()
 
-console.log("A", myArr); //Return  A [ 11, 12, 13, 14, 15, 16 ]
+// console.log("A", myArr); //Return  A [ 11, 12, 13, 14, 15, 16 ]
 
-const mynewArr1 = myArr.slice(1, 3) // (index no. "1" is inclided and index no. "3" is exclude
+// const mynewArr1 = myArr.slice(1, 3) // (index no. "1" is inclided and index no. "3" is exclude
 //Slice will not manupulate the Original Array, 
 
-console.log(mynewArr1); //Return   [ 12, 13 ]
+// console.log(mynewArr1); //Return   [ 12, 13 ]
                             
 
-console.log("B", myArr); //Return   B [ 11, 12, 13, 14, 15, 16 ]
+// console.log("B", myArr); //Return   B [ 11, 12, 13, 14, 15, 16 ]
 
 
 //                  Splice()
@@ -82,9 +82,9 @@ console.log("C", myArr); //Return  C [ 11, 15, 16 ]
 
 console.log(mynewArr2); //Return   [ 12, 13, 14 ]
 
-
-
 //The splice() method is used to change an array by adding.
+
+//*******************************************************************
 
 // const arr = ["walk the dog", "go shopping", "exercise"];
 // const index = 2;
