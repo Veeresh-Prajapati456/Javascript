@@ -17,10 +17,13 @@ const myArr2 = new Array(22, 23, 24, 25, "One", "Two", "Three") //  Storing a co
 // myArr2.push(true)
 // myArr2.push(25.5)
 // console.log(myArr, myHeroes, myArr2);
+// console.log(myHeroes);
+
 
 // myHeroes.pop() //With the use of ( pop()) method, we always delete the element from the end of Array
 // myArr2.pop()
 // console.log(myArr2, myHeroes);
+
 
 // myArr.unshift(10) //With the use of( unshift(value)) method, we always insert the element in the begining of the array
 // myHeroes.unshift("Hulk")
@@ -44,7 +47,7 @@ const myArr2 = new Array(22, 23, 24, 25, "One", "Two", "Three") //  Storing a co
 // console.log(myArr); //Return Array: [ 11, 12, 13, 14, 15, 16 ]
 // console.log(typeof myArr); //Return the (typeof myArr)  is "Object"
 
-const newArr = myArr.join() //With the help of join() Method- Adds all the elements of an array into a string ( means typeof array is change into String and also array is bind) Eg:- ( 11,12,13,14,15,16 )
+const newArr = myArr.join() // join() returns an array as a string. 
 // console.log(newArr); //Return Bind Array with Comma(,) seprated:   11,12,13,14,15,16
 // console.log(newArr); //Return the (typeof newArr)  is "String" 
 
@@ -118,20 +121,20 @@ const newArr = myArr.join() //With the help of join() Method- Adds all the eleme
 
 
 
-let employee = {
-	eid: "E102",
-	ename: "Jack",
-	eaddress: "New York",
-	salary: 50000
-}
+// let employee = {
+// 	eid: "E102",
+// 	ename: "Jack",
+// 	eaddress: "New York",
+// 	salary: 50000
+// }
 
-console.log("Employee=> ", employee);
-let newEmployee = employee; // Shallow copy
-console.log("New Employee=> ", newEmployee);
+// console.log("Employee=> ", employee);
+// let newEmployee = employee; // Shallow copy
+// console.log("New Employee=> ", newEmployee);
 
-console.log("---------After modification----------");
-newEmployee.ename = "Beck";
-console.log("Employee=> ", employee);
-console.log("New Employee=> ", newEmployee);
+// console.log("---------After modification----------");
+// newEmployee.ename = "Beck";
+// console.log("Employee=> ", employee);
+// console.log("New Employee=> ", newEmployee);
 // Name of the employee as well as 
 // newEmployee is changed.
