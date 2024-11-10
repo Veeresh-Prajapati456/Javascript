@@ -2,7 +2,7 @@
 
 const myArr = [11, 12, 13 , 14 ,15, 16]
 const myHeroes = ["Balvir", "Shaktiman", "NaagRaj"]
-const myArr2 = new Array(22, 23, 24, 25, "One", "Two", "Three") //  Storing a collection of multiple items under a single variable name is known as Array
+const myArr2 = new Array(22, 23, 24, 25, "One", "Two", "Three", true) //  Storing a collection of multiple items under a single variable name is known as Array
 
 // console.log(myArr[2]);
 // console.log(myHeroes[0]);
@@ -61,7 +61,8 @@ const newArr = myArr.join() // join() returns an array as a string.
 //splice will manupulate the Original Array
 
 
-//                  Slice()
+
+//********************Slice()*************************************
 
 // console.log("A", myArr); //Return  A [ 11, 12, 13, 14, 15, 16 ]
 
@@ -70,12 +71,11 @@ const newArr = myArr.join() // join() returns an array as a string.
 
 // console.log(mynewArr1); //Return   [ 12, 13 ]
                             
-
 // console.log("B", myArr); //Return   B [ 11, 12, 13, 14, 15, 16 ]
 
 
-//                  Splice()
 
+//***********************Splice()*********************************
 
 /*The splice() method is used to change an array by adding, removing, or replacing elements. This method modifies the original array.*/
 
@@ -119,7 +119,57 @@ const newArr = myArr.join() // join() returns an array as a string.
 // console.log(arr); //Return Original Array
 
 
+//**************************************************************************************/
 
+/* Shalow Copy:-  A shallow copy creates a new object or array and inserts references to the original elements found in the source.
+  In other words, If the original object has nested objects (objects inside objects), the references (pointers) to those nested objects are copied,
+  not the actual data. So, any changes in the nested objects affect both the original and the copied object. */
+  
+ // Example of Shallow copy:
+
+//  const original = {
+//     name: 'John',
+//     age: 30,
+//     address: {
+//         city: 'New York',
+//         country: 'USA'
+//     }
+// };
+
+// // Creating a shallow copy
+// const shallowCopy = { ...original };
+
+// // Modifying the nested object in shallow copy
+// shallowCopy.address.city = 'San Francisco';
+
+// console.log(original.address.city); // Output: San Francisco
+
+//*****************************************************************************************/
+
+
+/* Deep Copy:-  A deep copy duplicates an entire object or array, including all levels of nested objects. 
+  Changes to nested objects in a deep copy don’t affect the original object. */
+
+// Example of Deep copy:
+
+// const original = {
+//     name: 'Alice',
+//     age: 25,
+//     address: {
+//         city: 'London',
+//         country: 'UK'
+//     }
+// };
+
+// // Creating a deep copy using JSON methods
+// const deepCopy = JSON.parse(JSON.stringify(original));
+
+// // Modifying the nested object in deep copy
+// deepCopy.address.city = 'Manchester';
+
+// console.log(original.address.city); // Output: London
+
+//***************************************************************************************
 
 // let employee = {
 // 	eid: "E102",
@@ -136,5 +186,6 @@ const newArr = myArr.join() // join() returns an array as a string.
 // newEmployee.ename = "Beck";
 // console.log("Employee=> ", employee);
 // console.log("New Employee=> ", newEmployee);
+
 // Name of the employee as well as 
 // newEmployee is changed.
