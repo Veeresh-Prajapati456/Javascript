@@ -15,7 +15,7 @@ const oldHeros = ["shaktiman", "Balvir", "NaagRaj"]
 
 //                 Spread Operator
 
-// const allnewHeros = [...marvalHeros, ...dcHeros, ...oldHeros] //Spread Operator: Combines two or more arrays - Same as Concat() Method // We can add value as much as you want, It can also be used with the objects.
+// const allnewHeros = [...marvalHeros, ...dcHeros, ...oldHeros] //Spread Operator: Combines two or more arrays - Same as Concat() Method, This method returns a new array// We can add value as much as you want, It can also be used with the objects.
 // console.log(allnewHeros);
 
 
@@ -24,10 +24,10 @@ const anotherArray = [1, 2, 3, [4, 5, 6], 7, [8, 9, [10, 11,12,[13,14]],15],16]
 // /* Important Note: We can not give "Infinity" in place of depth but this is not a good practice
 //  we should always give Exact depth in Numbers Eg: 1 or 2 or any number according to your array depth in- flat() */
 
-// const realanotherArray = anotherArray.flat(Infinity)  //The maximum recursion depth returns a new array with all, flat()- we give depth in the bracket (Eg: 1 or 2 or any number like( [ 1, 2, 3, 4, 5, 6, 7, 8, 9, [ 10, 11 ] ] ) or "infinity" for complete depth, infinity will flat all the array- Eg: for Infinity:- [1, 2, 3, 4,  5, 6, 7, 8, 9, 10, 11])
+const realanotherArray = anotherArray.flat(Infinity) //Return Return [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16] //The maximum recursion depth returns a new array with all, flat()- we give depth in the bracket (Eg: 1 or 2 or any number like( [ 1, 2, 3, 4, 5, 6, 7, 8, 9, [ 10, 11 ] ] ) or "infinity" for complete depth, infinity will flat all the array- Eg: for Infinity:- [1, 2, 3, 4,  5, 6, 7, 8, 9, 10, 11])
 // const realanotherArray = anotherArray.flat(1)
-// const realanotherArray = anotherArray.flat(3)
-// console.log(realanotherArray); //Returns a new array with all sub array elements concated into it
+// const realanotherArray = anotherArray.flat(3) //Return [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+// console.log(realanotherArray); //Returns a new array with all sub array elements concated into it. 
 
 
 //Asking a Question that is this is a Array or Not : it will Return value in Boolean : True /False
@@ -52,10 +52,10 @@ const anotherArray = [1, 2, 3, [4, 5, 6], 7, [8, 9, [10, 11,12,[13,14]],15],16]
 const numbersOne = [1, 2, 3];
 const numbersTwo = [4, 5, 6];
 const oneprint = numbersOne.concat(numbersTwo);
-const twoprint =[...numbersOne, ...numbersTwo];
+const twoprint =[...numbersOne, ...numbersTwo]; //spread operator
 
-console.log( typeof oneprint);
-console.log(typeof twoprint);
+console.log( typeof oneprint); //object
+console.log(typeof twoprint); //object
 
-console.log(oneprint);
-console.log(twoprint);
+console.log(oneprint); //Return: [ 1, 2, 3, 4, 5, 6 ]  //Return new array
+console.log(twoprint); //Return: [ 1, 2, 3, 4, 5, 6 ] //Return new array
