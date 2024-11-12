@@ -1,14 +1,23 @@
+// Ways to declare Objects through Singleton/Constructor or Literal
+// The only difference between Constructor and literal is that, constructor is singleton and Literal is Non-Singleton
+//and there is no other difference between them
+
 /* singleton/Constructor */
-//const tinderUser = new Object()
+ const tinderUser = new Object() 
+// console.log(tinderUser); //Return: {}  (Empty Object)
 
+//            OR
 
-const tinderUser = {}  //literal object
+//literal object
+// const tinderUser = {}  
+// console.log(tinderUser); //Return: {}  (Empty Object)
 
 tinderUser.id = "123abc"
 tinderUser.name = "Veeresh"
 tinderUser.isLoggedIn = false
+// console.log(tinderUser);  //Return: { id: '123abc', name: 'Veeresh', isLoggedIn: false }
 
-// console.log(tinderUser);
+
 
 const regularUser = {
     email : "veeresh678@gmail.com",
@@ -20,16 +29,16 @@ const regularUser = {
     }
 }
 
-// console.log(regularUser.email);
+// console.log(regularUser.email); //Return: veeresh678@gmail.com
 
-// console.log(regularUser.fullname.userfullname); //way to access object in object
+// console.log(regularUser.fullname.userfullname); //way to access object in object.  //Return: { firstname: 'veeresh', lastname: 'Kumar' }
 
 
 const source1 = {1: "a", 2: "b"}
 const source2 = {3: "c", 4: "d"}
 const source3 = {5: "e", 6: "f"}
 
-// const returnTarget = Object.assign({}, source1, source2, source3) //we assume ( {} ) as target so that all that sources put into empty onject({}) to combine all the sources.
+// const returnTarget = Object.assign({}, source1, source2, source3) //we assume ( {} ) as target so that all that sources put into empty object({}) to combine all the sources.
 // Taking Empty Object ( {} ) as target is the good practice.
 // console.log(returnTarget);  //Return:-  { '1': 'a', '2': 'b', '3': 'c', '4': 'd', '5': 'e', '6': 'f' }
 
@@ -47,7 +56,7 @@ const source3 = {5: "e", 6: "f"}
 
 
 //Values from Database
-const user = [                      //Array of Object
+const user = [                      //values come from database is in the form of Array of Object
     {
         id : 101,
         name : "Veeresh Kumar",
@@ -73,7 +82,7 @@ const user = [                      //Array of Object
     }
 ]
 
-// console.log(user[2].email);  //Way to access values of Array of Object
+// console.log(user[2].email);  //Way to access values of Array of Object //Return: kapilg44@gmail.com
 
 // console.log(tinderUser); //Returns:- { id: '123abc', name: 'Veeresh', isLoggedIn: false }
 
@@ -106,15 +115,10 @@ const course = {
 // console.log(course["courseInstructor"]);
 
 
-//Another way to console log
+//Another way to console log/ Destructuring
 const {courseInstructor : instructor} = course  // Here we have done Object Destructuring:- "course" means from where we have to extract values, and suppose we have to extract "courseInstructor"
 console.log(instructor);  //Return:- "Veeresh Kumar"
 
 
-
-
-// // Concept of React  not in JS
-// const navbar = ({companyName}) => {     //Here we do destructuring:-  we write ({companyName}) instead of writing (props.companyName) or (props.keyName)
-
-// }
-// navbar(companyName = "veeresh")  //Here we call navbar and give values to navbar
+// API Name: RandomUserme
+//To understand JSON Values we use tool Name: JSON Formatter
