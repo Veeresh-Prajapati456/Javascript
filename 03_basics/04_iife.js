@@ -36,3 +36,51 @@
 
 //How to pass parameter in the IIFE
 // This question solution explained in UNnamed IIFE
+
+// **********************************************************************
+
+
+// Understand Syntax of IIFE in Simple Way
+
+// () ()    //first parenthesis is forfunction defination, and second parenthesis is for execution call
+
+
+// *********************************************************************
+
+
+
+
+
+//How to write two IIFE together  OR  How to write two IIFE in One File.
+
+// (function chai(){
+//     console.log(`DB CONNECTED`); //Return: DB CONNECTED
+// }) ();
+
+// (function snack(){
+//     console.log(`DB CONNECTED TWO`); ////Return: DB CONNECTED TWO
+// }) ()
+
+
+//            OR
+
+
+// (function chai(){
+//     console.log(`DB CONNECTED`); //Return: DB CONNECTED
+// }) ();
+
+// ( () => {    //Arrow function without Name
+//     console.log(`DB CONNECTED TWO`); ////Return: DB CONNECTED TWO
+// }) ()
+
+
+//             OR
+
+
+// (function chai(){
+//     console.log(`DB CONNECTED`); //Return: DB CONNECTED
+// }) ();
+
+// ( (name) => {
+//     console.log(`DB CONNECTED TWO ${name}`); ////Return: DB CONNECTED TWO
+// }) ("veeresh")
