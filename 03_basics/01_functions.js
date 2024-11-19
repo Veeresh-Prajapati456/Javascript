@@ -1,4 +1,6 @@
-//Function
+//Function:- A function is a reusable block of code that performs a specific task. 
+// You define it once, and then you can run (or “call”) it whenever you need that task done in your program.
+
 
 function sayMyName(){
     console.log("V");
@@ -7,7 +9,7 @@ function sayMyName(){
     console.log("R");
     console.log("E");
     console.log("S");
-    console.log("H");
+    console.log("H" );
     
 }
 
@@ -41,9 +43,10 @@ function addTwoNumbers(num1, num2){   //when we have make the defination of func
     // let result = num1 + num2
     // console.log("Veeresh");  //Return:-  Veeresh 
     // return result     //when we return anything we can store into another variable (like: variable name: newResult)
+
     //        OR
+
     // return num1 + num2   //with this way we have not need to declare one more new variable
-            
     // console.log("Veeresh");  //This line will not Execute //If we want to Execute anything after return it will not execute because it is a rule of function defintion that once you return anything, nothing is return after this
 
 // }
@@ -74,22 +77,26 @@ function addTwoNumbers(num1, num2){   //when we have make the defination of func
 //     return`${username} just logged in`
 // }
 
-// console.log(loginUserMessage());            //Return:- Please Enter UserName
-
+// // console.log(loginUserMessage());            //Return:- Please Enter UserName
+// console.log(loginUserMessage("Ankit"));            //Return:- Ankit just logged in
 
 
 //Another Way to prevent from undefined output
-function loginUserMessage(username = "sam"){
+function loginUserMessage(username="John"){
     if(!username){
-        console.log("Please Enter UserName");
+        console.log("Please Enter UserNames");
         return
     }
     return`${username} just logged in`
 }
 
-// console.log(loginUserMessage("Veeresh"));    //Return:- Veeresh just logged in
+console.log(loginUserMessage("Veeresh"));    //Return:- Veeresh just logged in
 // console.log(loginUserMessage());  // if we will not pass any value, it will print default value which we will given above in the (username = "sam") and if we pass value, it will overwrite the value
 
+// ************************************************************************
+
+
+// To add multiple items in Cart Problem Solution.
 
 //Rest Operator
 // function calculateCartPrice(...num1){
@@ -101,11 +108,11 @@ function loginUserMessage(username = "sam"){
 
 
 // //Another Way of Rest Operator
-// function calculateCartPrice(val1, val2, ...num1){   //val1 = 200, val2 = 400, ...num1(rest operator) = 500, 2000
-//     return num1
-// }
+function calculateCartPrice(val1, val2, ...num1){   //val1 = 200, val2 = 400, ...num1(rest operator) = 500, 2000
+    return num1
+}
 
-// console.log(calculateCartPrice(200, 400, 500, 2000));  //Return:-  [ 500, 2000 ]
+console.log(calculateCartPrice(200, 400, 500, 2000));  //Return:-  [ 500, 2000 ]
 
 
 
@@ -133,6 +140,6 @@ function returnSecondValue(getArray){
     return getArray[1]
 }
 
-console.log(returnSecondValue(myArray));  //Return:- 400
+// console.log(returnSecondValue(myArray));  //Return:- 400
 //           OR
-console.log(returnSecondValue([200,400, 600, 800, 1000]));  //Return:- 400
+// console.log(returnSecondValue([200,400, 600, 800, 1000]));  //Return:- 400
