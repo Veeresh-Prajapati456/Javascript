@@ -56,7 +56,13 @@ if(true){
 // }
 // addone(5)
 
-addone(5)                //This is called Hoisting, in this case if we ( console.log(addone(5)) ) then it will run properly and return a value that is ( 6 ) which is correct. But in yhe below case if we do like this then it will throw an error
+//********************************************************* */
+
+//Hoisting: In JavaScript, hoisting is a behavior in which a function or a variable can be used before declaration.
+
+console.log(addone(5));  //To print
+// OR
+addone(5)               //This is called Hoisting, in this case if we ( console.log(addone(5)) ) then it will run properly and return a value that is ( 6 ) which is correct. But in the below case if we do like this then it will throw an error
 function addone(num){
     return num + 1
 }
@@ -72,6 +78,6 @@ function addone(num){
 
 
 addTwo(5)                       //In this case if we do ( console.log(addTwo(5)) ) then it will return an error that is:- ( Cannot access "addTwo" before initialization ), we can not use/access function before declaration in this case
-const addTwo = function(num){
+const addTwo = function(num){    //Error: Cannot access 'addTwo' before initialization.
     return num + 2
 }
