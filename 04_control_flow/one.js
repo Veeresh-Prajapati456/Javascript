@@ -1,6 +1,13 @@
 //if
 // const isUserLoggedIn = true
 
+
+// if(2 == "2"){
+//     console.log("executed"); //Return: executed
+// }
+
+// *******************************************************************
+
 // if(2 === "2"){
 //     console.log("executed");
 // }
@@ -11,16 +18,16 @@
 //     console.log("executed");
 // }
 
-// ********************************************************************
+// *******************************************************************
 
-// let temperature = 38
-// if(temperature <= 40){
-//     console.log("Temperature is Normal");
-// }
-// else{
-//     console.log("Today is hot day"); 
-// }
-// console.log("Program Executed Successfully");
+let temperature = 55
+if(temperature <= 40){
+    console.log("Temperature is Normal");   
+}
+else{
+    console.log("Today is hot day"); 
+}
+console.log("Program Executed Successfully");
 
 //**********************************************************************
 
@@ -64,14 +71,17 @@
 
 const userLoggedIn = true
 const debitCard = true
-const loggedInFromGoogle = true
+const loggedInFromGoogle = false
 const loggedInFromEmail = true
 
-if(userLoggedIn && debitCard){
+if(userLoggedIn && debitCard && 2==3){
     console.log("Allow to Buy Courses");
 }
 
 if(loggedInFromGoogle || loggedInFromEmail){
     console.log("User Logged In");
 }
-console.log("Invalid Details");
+else{
+    console.log("Invalid Details");
+}
+
