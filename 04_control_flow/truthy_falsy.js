@@ -1,5 +1,7 @@
-// const userEmail = "veer44@gmail.com"
-const userEmail = []
+const userEmail = "veer44@gmail.com"
+// const userEmail = "0"
+
+// const userEmail = []
 
 if(userEmail){
     console.log("Got user Email");
@@ -10,14 +12,14 @@ else{
     
 }
 
-//***********************************************************************
-
-// Falsy Values
-// false, 0, -0, BigInt 0n, "", null, undefined, NaN
-
+//**********************************************************************
 
 // Truthy Values
 // "0", "false", " ", [], {}, function(){}
+
+
+// Falsy Values
+// false, 0, -0, BigInt 0n, "", null, undefined, NaN
 
 
 // false == 0  Returns:- true
@@ -26,22 +28,28 @@ else{
 
 //**********************************************************************
 
+// To check/detect Array is Empty or Not.
+
 // if(userEmail.length === 0){
 //     // console.log("Array is Empty");  Array is Empty
     
 // }
 
 
-const emptyObj ={}
+// To check/detect Object is Empty or Not.
 
-if(Object.keys(emptyObj).length === 0){
-    console.log("Object is Empty");
+// const emptyObj ={}
+
+// if(Object.keys(emptyObj).length === 0){
+//     console.log("Object is Empty");
     
-}
+// }
 
 //***********************************************************************
 
-//Nullish Coalescing Operator (??):  null, undefined----> sary kahani doo hi keyword ke upar tikki hoti hai 
+//Nullish Coalescing Operator (??):
+// The nullish coalescing (??) operator is a logical operator that returns its right-hand side operand when its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand.
+// null, undefined----> sarry kahani doo hi keyword ke upar tikki hoti hai 
 
 let val1;
 // val1 = 5 ?? 10     //Return:- 5
@@ -51,7 +59,7 @@ let val1;
 // val1 = undefined ?? 15  //Return:-  15
 
 val1 = null ?? 10 ?? 20    //Return:- 10
-
+ 
 
 console.log(val1);
 
