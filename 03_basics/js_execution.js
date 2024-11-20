@@ -7,8 +7,7 @@
 //and wherever the global Execution Context will be created it will be referred to "this" variable, and our "Global Execution context" will be kept in "this" variable.
 
 
-// To run/ Execute the program, JavaScript runs/Execute the program in two Phases.
-
+// Few Execution Context:
 //  1) Global Execution Context
 
 //  2)Function/Functional Execution Context
@@ -18,17 +17,20 @@
 
 
 // Important Note:-
-//JavaScript is a single threaded  ( means just one line of code may be run at once) Language
+//JavaScript is a single threaded Language
+// A single-threaded language is one that can execute only one task at a time. The program will execute the tasks in sequence, and each task must complete before the next task starts.
 
 
 // Imp. Interview Question:
+//Global Execution context of Browser is more important than nodejs environment, denojs environment, bun environment, because browser's Global Execution context is slightly different from (nodejs environment, denojs environment etc.) while Global Execution Context.
+
 //In Browser the Value of "this" while Global Execution Context is "Window Object"
 
 
 
 // Let's suppose we have JavaScript Code and the code will run in two phases.
 
-// 1) Memory Creation Phase/Creation Phase:- In the Memory Creation phase only memory is allocated to the variables and functions. For all variables value stored in memory is undefined and functions are copied in memory
+// 1) Memory Creation Phase/Memory Phase/Creation Phase:- In the Memory Creation phase only memory is allocated to the variables and functions. For all variables, value stored in memory is undefined and functions are copied in memory
 
 // 2) Execution Phase:-  JavaScript code is executed line by line and it is defining variables in memory here.
 //Execution Phase of Code.
@@ -73,13 +75,36 @@ console.log(result2);
 //          val2 => undefined
 //          total => undefined
 
-//addnum:- Execution Phase
+//addnum:- Execution Phase/execution context
 //          num1 => 10
 //          num2 => 5
 //          total => 15  (total is return back to the parent execution context or Global Execution Context)
-
+// After the complition of Execuion phase it is deleted
 
 
 //***********************************************************************
 
-// Call Stack
+// Call Stack:
+// It is the mechanism by which the JavaScript engine keeps track of function calls in a program. It operates as a Last In, First Out (LIFO) data structure, meaning that the last function called is the first one to be resolved.
+
+// Example:
+function one(){
+        console.log("One")
+        two()
+    }
+    function two(){
+        console.log("two")
+        three()
+    }
+    function three(){
+        console.log("three")
+    }
+    one()
+    two()
+    three()
+
+
+// Return: 
+//   One
+//   Two
+//   Three
