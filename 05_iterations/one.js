@@ -11,14 +11,14 @@
 
 //**********************************************************************
 
-// for (let i = 1; i <= 10; i++) {
-//         console.log(`Outer loop ${i}`);
-//     for (let j = 1; j <= 10; j++) {
-//         // console.log(`Inner loop value${j} and inner loop ${i}`);
-//         console.log(i + '*' + j + ' = ' + i*j);
-//     }
+for (let i = 1; i <= 10; i++) {
+        console.log(`Outer loop ${i}`);
+    for (let j = 1; j <= 10; j++) {
+        console.log(`Inner loop value${j} and inner loop ${i}`);
+        console.log(i + '*' + j + ' = ' + i*j);
+    }
     
-// }
+}
 
 // *********************************************************************
 
@@ -33,10 +33,10 @@
 
 // *********************************************************************
 
-for (let index = 1; index <=20; index++) {
-    console.log(`Value of i is ${index}`);
+// for (let index = 1; index <=20; index++) {
+//     console.log(`Value of i is ${index}`);
     
-}
+// }
 
 // ********************************************************************
 
@@ -53,11 +53,4 @@ for (let index = 1; index <=20; index++) {
 
 // ********************************************************************
 
-for (let index = 1; index <= 20; index++) {
-    if(index == 5){
-        // console.log("Value 5 is Detected ");
-        continue;
-    }
-    // console.log(`value of i is ${index}`);
-     
-}
+
