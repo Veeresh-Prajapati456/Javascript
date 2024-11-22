@@ -2,7 +2,9 @@
 
 const coding = ["js", "ruby", "java", "python", "cpp"]
 
-// coding.forEach( function (item){  // function we used iinside coding.forEach is Call Back Function
+// coding.forEach( function (item){  
+/* function we used inside "  coding.forEach  " is Call Back Function  // In call-back function we can not write the function name. Example:- coding.forEach(function arr(item){
+}) :- this is wrong, correct function is written above */
 //     console.log(item);
     
 // })
@@ -70,8 +72,19 @@ const myCoding = [
     }
 ]
 myCoding.forEach( (item) => {
-    // console.log(item.languageName);   //get value of languageName
+    console.log(item.languageName);   //get value of languageName
 
-    console.log(item.languageFileName);   //get value of languageFileName
+    // Return:-  Javascript
+    //           C++
+    //           Python
+    //           Java
+
+
+    // console.log(item.languageFileName);   //get value of languageFileName
+
+    // Return:-  .js
+    //           .cpp
+    //           .py
+    //           .java
     
-});
+})
