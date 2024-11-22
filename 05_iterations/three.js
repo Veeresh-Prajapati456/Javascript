@@ -121,8 +121,9 @@ for (const key of map2) {
 
 // Note:
 // Objects are not iterable
-// For-of loop is not working with objects
-// for-of loop is work with Maps
+// forof loop is not working with objects
+// forin loop is work with Objects
+// forof loop is work with Maps
 
 
 // const myObject = {
