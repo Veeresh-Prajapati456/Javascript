@@ -41,14 +41,14 @@ for (const key in programming) {
     // console.log(key);  //Return only keys
     
     // console.log(programming[key]);  //Returns only Values
+    // console.log(`${key} => ${programming[key]}`); 
     
 }
 
 // *******************************************************************
 
 
-// Map with hep of forin Loop
-// Mp is not return any output with Forin Loop, because map is not iterable in case of Forin
+// Map is not return any output with Forin Loop, because map is not iterable in case of Forin
 
 // const map = new Map()
 // map.set('IND', "India")
@@ -56,6 +56,6 @@ for (const key in programming) {
 // map.set('JPN', "Japan")
 
 // for (const key in map) {
-//     console.log(key);   
+    // console.log(key);   //Return:- No Output
 
 // }
