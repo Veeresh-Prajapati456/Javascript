@@ -81,7 +81,7 @@ map2.set('JPN', "Japan")
 // console.log(map1.get('a'));
 // // Expected output: 97
 
-// console.log(map1.size);     //to check the size
+// console.log(map1.size);     //returns the number of elements in the map
 // // Expected output: 3
 
 // map1.delete('b');
@@ -122,8 +122,8 @@ for (const key of map2) {
 // Note:
 // Objects are not iterable
 // forof loop is not working with objects
-// forin loop is work with Objects
 // forof loop is work with Maps
+// forin loop is work with Objects
 
 
 // const myObject = {
