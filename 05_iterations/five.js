@@ -2,12 +2,12 @@
 
 const coding = ["js", "ruby", "java", "python", "cpp"]
 
-// coding.forEach( function (item){  
+coding.forEach( function (item){  
 /* function we used inside "  coding.forEach  " is Call Back Function  // In call-back function we can not write the function name. Example:- coding.forEach(function arr(item){
 }) :- this is wrong, correct function is written above */
-//     console.log(item);
+    console.log(item);
     
-// })
+})
 
 //                   OR
 
