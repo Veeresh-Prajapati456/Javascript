@@ -27,7 +27,7 @@
 // const programming = ["js", "rb", "py", "java", "cpp"]
 
 // for (const [key,value] of programming) {
-//     // console.log(key);  //Return only values
+//     console.log(key);  //Return only values
     
 // }
 
@@ -38,10 +38,10 @@
 const programming = ["js", "rb", "py", "java", "cpp"]
 
 for (const key in programming) {
-    // console.log(key);  //Return only keys
+    console.log(key);  //Return only keys
     
-    // console.log(programming[key]);  //Returns only Values
-    // console.log(`${key} => ${programming[key]}`); 
+    console.log(programming[key]);  //Returns only Values
+    console.log(`${key} => ${programming[key]}`); 
     
 }
 
@@ -49,6 +49,7 @@ for (const key in programming) {
 
 
 // Map is not return any output with Forin Loop, because map is not iterable in case of Forin
+// forof loop is work with Maps
 
 // const map = new Map()
 // map.set('IND', "India")
