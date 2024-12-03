@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: #212121; color:#080808;">
+    
+</body>
+<script>
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = "main"
+    div.id = Math.round(Math.random() * 10 + 1)
+    div.setAttribute("title", "generated title")
+    div.style.backgroundColor="Pink"
+    div.style.padding="15px"
+
+    // div.innerText = "Learning Javascript"
+    //      OR
+    const addText =document.createTextNode("Learning javascript")
+    div.appendChild(addText)
+
+    document.body.appendChild(div)  //to append child in body
+</script>
+
+<!-- The .createTextNode() method is used to create a text node, which represents plain text that can be added to an HTML element  -->
+
+<!-- The .appendChild() method is used to add a node (element or text) as the last child of a specified parent node -->
+
+<!-- **************************************************************** -->
+
+<!-- Creating and Appending a New Element -->
+
+<!-- <div id="container"></div>
+<script>
+  // Create a new <p> element
+  const newParagraph = document.createElement('p');
+  
+  // Add text content to the <p> element
+  newParagraph.textContent = 'Hello, this is a new paragraph!';
+  newParagraph.style.backgroundColor='pink'
+
+  // Append the new element to the existing <div> element
+  const container = document.getElementById('container');
+  container.appendChild(newParagraph);
+</script>  -->
+  
+
+<!-- ************************************************************** -->
+
+<!-- Creating a Button with an Event Listener -->
+
+  <!-- <div id="button-container"></div>
+  <script>
+    // Create a new <button> element
+    const newButton = document.createElement('button');
+    
+    // Set the button's text content
+    newButton.textContent = 'Click Me';
+
+    // Add a click event listener
+    newButton.addEventListener('click', () => {
+      alert('Button was clicked!');
+    });
+
+    // Append the button to the container
+    document.getElementById('button-container').appendChild(newButton);
+  </script> -->
+</html>
