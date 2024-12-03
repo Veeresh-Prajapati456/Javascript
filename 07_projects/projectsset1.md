@@ -255,6 +255,10 @@ if(height === '' || height < 0 || isNaN(height)){     //this is the updated and 
 
 ```
 
+## Project 3:
+## Name: Digital Clock
+
+#### Solution 3:
 
 ``` HTML
 
