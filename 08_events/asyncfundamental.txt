@@ -1,0 +1,38 @@
+JavaScript is a Synchronous and Single-threaded Language.
+
+        Synchronous: synchronous execution refers to the sequential execution of code, where each line is executed one after the other.
+        In short, In synchronous code, one task must complete before the next one starts. 
+
+        Single Threaded: Only one task runs at a time in the main execution thread.
+
+        The Default behaviour of JavaScript is Asynchronous and Single-Threaded Language
+
+
+Execution Context: Execute One line of code at a time. 
+                        (Each operation waits for the last one to complete before Executing)
+
+
+Blocking Code:
+        Block the flow of Program
+        Read File Sync
+
+        Example of Synchronous Code: (jab user Register karne ke liye data fill karta tho uske baad hi hum "Register Successful" ka message show hota hai, hum asa tho nahi kehte user ko ki aap details fill kara aur hum details puri fill hone se pahle hi "register successfully" ka message de de, asa tho nahi karte. Jab puri Details fill ho jati hai, validation ho jata hai, value datbase mae chali jati hai, uske baad hi tho "Register Successful ka message dete hai, tho use ko Synchronous code kehte hai)
+
+Non Blocking Code:
+        Does not Block execution
+        Read File Async
+
+
+--  How is a JavaScript engine made?
+--  Made up of Memory Heap and Call Stack.
+
+--  Web API always found in Browser never anywhere
+
+--If we have Web API then we always have DOM access, because DOM is in browser or web.
+
+--If we have Node Environment then we don't get DOM API because there is no DOM(Document Object Model)
+
+-- Set Timeout call found in Web API or Node API
+*****************************************************************
+
+Whenever a program is executed a call stack is made and in this call stack firstly Global Execution context is made and then one by one function is loaded, and as the execution of those function ends the function is unloaded.
