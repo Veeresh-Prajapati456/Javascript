@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+
+<script>
+
+    // document.getElementById('owl').onclick = function(){      //this is the old way for onclick, it will give the less features as comparative to event, because event is the modern and updated way 
+    //     alert('owl clicked')
+    // }
+
+//         OR
+
+
+    // IMP Interview Question: Why we not use third parameter that is false 
+    // third parameter is default false that why we did not use.
+    // document.getElementById('owl').addEventListener('click', function(){},false)
+
+    // attachEvent() is also used for Events
+
+//           OR
+
+    // document.getElementById('owl').addEventListener('click', function(){      //this is the best approach for Events like (click, mouseover, double click)
+    //     alert('Owl clicked again')
+    // })   
+    
+// *********************************************************************
+
+// Study about these Topics:
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+
+// Event Object: function(e)
+    // document.getElementById('owl').addEventListener('click', function(e){      
+    //     console.log(e);   
+    // }, false)  
+  
+// ******************************************************************
+// Event Propagation ka sara ka sara khel bubblingup hua matlab ki niche se upar ki orr jata hai(matlab aap ne sabse phele inner element par click kiya jo ki tha image aur uske baad 'li' par fir 'ul' par)
+
+// In short, jo bhi element ya jo bhi script track kar rahi hai bade elements ko, inside se outside tho vo hota hai Event Propagation tho uss ko bubbling bolte hai yaha pe.
+
+// Bubbling:
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("clicked inside the ul");   
+    // }, false)     //  'default' value bhi 'false' hoti hai yaha pe, tho hum false ko hata bhi sakte hai
+
+
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("owl clicked");   
+    // }, false)
+
+// ******************************************************************
+// To prevent from bubbling (means jab aap ne owl par click kiya tho aap ka element bubble ho kar ke upar ke element par nahi jayega) use stopPropagation
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("clicked inside the ul");   
+    // }, false)     //  'default' value bhi 'false' hoti hai yaha pe, tho hum false ko hata bhi sakte hai
+
+
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("owl clicked"); 
+    //     e.stopPropagation()  //To prevent from bubbling (means jab  
+                                //  aap ne owl par click kiya tho aap ka element bubble ho kar ke upar ke element par nahi jayega)use stopPropagation
+    // }, false)
+
+
+// *******************************************************************
+
+// Capturing Mode: In short, jo bhi element ya jo bhi script track kar rahi hai elements ko,vo top se bottom ki orr jata hai capturing mode mae matlab phele 'ul' capture hua ha then 'owl' means 'li'
+
+// document.getElementById('owl').addEventListener('click', function(e){
+//         console.log("clicked inside the ul");   
+//     }, true)     //  'default' value bhi 'false' hoti hai yaha pe, tho hum false ko hata bhi sakte hai
+
+
+//     document.getElementById('owl').addEventListener('click', function(e){
+//         console.log("owl clicked");   
+//     }, true)
+
+// ****************************************************************
+
+// To perform preventDefault() and stopPropagation() method on google link
+
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation()
+    //     console.log("google clicked");
+    // }, false)
+
+// *************************************************************
+// Remove listItem on Click Event
+document.querySelector('#images').addEventListener('click', function(e){
+    console.log(e.target.tagName);
+    if(e.target.tagName === 'IMG'){
+        console.log(e.target.id);
+        let removeIt = e.target.parentNode
+        removeIt.remove()
+
+        // OR
+
+        //removeIt.parentNode.removeChild(removeIt)
+    }
+})
+
+</script>
+</html>
