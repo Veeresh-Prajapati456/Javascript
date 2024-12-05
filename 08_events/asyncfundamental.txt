@@ -5,23 +5,31 @@ JavaScript is a Synchronous and Single-threaded Language.
 
         Single Threaded: Only one task runs at a time in the main execution thread.
 
-        The Default behaviour of JavaScript is Asynchronous and Single-Threaded Language
+        The Default behaviour of JavaScript is Synchronous and Single-Threaded 
 
 
 Execution Context: Execute One line of code at a time. 
                         (Each operation waits for the last one to complete before Executing)
 
+*********************************************************************************************************
 
 Blocking Code:
-        Block the flow of Program
-        Read File Sync
+        Block the flow of Program  (The process halts and waits for a task to complete before proceeding.) 
+        Read File Sync.
 
-        Example of Synchronous Code: (jab user Register karne ke liye data fill karta tho uske baad hi hum "Register Successful" ka message show hota hai, hum asa tho nahi kehte user ko ki aap details fill kara aur hum details puri fill hone se pahle hi "register successfully" ka message de de, asa tho nahi karte. Jab puri Details fill ho jati hai, validation ho jata hai, value datbase mae chali jati hai, uske baad hi tho "Register Successful ka message dete hai, tho use ko Synchronous code kehte hai)
+        (Eg:- You start boiling water for pasta and stand by the stove, waiting until the water boils before doing anything else)
+
+        Example of Synchronous Code: (jab user kisi website par Register karne ke liye data fill karta hai tho uske baad hi hum "Register Successful" ka message show hota hai, hum asa tho nahi kehte user ko ki aap details fill karo aur hum details puri fill hone se pahle hi "register successfully" ka message de de, asa tho nahi karte. Jab puri Details fill ho jati hai, validation ho jata hai, details datbase mae chali jati hai, uske baad hi tho "Register Successful ka message dete hai, tho use ko Synchronous code kehte hai)
+
+
 
 Non Blocking Code:
         Does not Block execution
         Read File Async
 
+        (Eg:- You start boiling water for pasta and then move to chop vegetables or set the table while waiting for the water to boil.)
+
+*********************************************************************************************************
 
 --  How is a JavaScript engine made?
 --  Made up of Memory Heap and Call Stack.
@@ -32,7 +40,7 @@ Non Blocking Code:
 
 --If we have Node Environment then we don't get DOM API because there is no DOM(Document Object Model)
 
--- Set Timeout call found in Web API or Node API
-*****************************************************************
+-- setTimeout() call found in Web API or Node API
+**********************************************************************************************************
 
 Whenever a program is executed a call stack is made and in this call stack firstly Global Execution context is made and then one by one function is loaded, and as the execution of those function ends the function is unloaded.
