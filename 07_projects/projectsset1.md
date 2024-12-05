@@ -727,3 +727,23 @@ window.addEventListener('keydown', (e) => {
 });
 
 ```
+
+
+## Project 7:
+## Name: Keyboard
+
+#### Solution 7:
+
+
+``` HTML
+
+
+
+```
+
+
+``` JavaScript
+
+
+
+```
