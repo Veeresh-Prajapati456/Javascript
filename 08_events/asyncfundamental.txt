@@ -41,6 +41,9 @@ Non Blocking Code:
 --If we have Node Environment then we don't get DOM API because there is no DOM(Document Object Model)
 
 -- setTimeout() call found in Web API or Node API
+
+-- setTimeout(), setInterval() is not a part of Core JavaSript, we can get it through browser or it is a part of the browser's WEb APIs and is commonly used to introduce schedule Code Execution.
+
 **********************************************************************************************************
 
 Whenever a program is executed a call stack is made and in this call stack firstly Global Execution context is made and then one by one function is loaded, and as the execution of those function ends the function is unloaded.
