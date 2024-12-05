@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur JavaScript</h1>
+    <button id ="start">Start</button>
+    <button id ="stop">Stop</button>
+</body>
+<script>
+
+// setInterval():- Sets a timer to execute a specified function or code after a given delay (in milliseconds). It is commonly used to introduce delays or schedule code execution.
+
+// Syntax:- setInterval(function, delay, ...args)
+
+            /* function: The function or block of code to execute after the delay.
+
+               delay: The time interval in milliseconds between each execution.(1 second = 1000 milliseconds)
+
+               ...args: optional arguments to pass to the function.
+
+            */
+
+
+
+// **********************************************************************
+
+    // setInterval(function(){
+    //     console.log("Veeresh Kumar", Date.now());     //Return after every 2 Sec. :- Veeresh Kumar 1733393317355
+    // }, 2000)
+
+
+//         OR
+
+
+    // const sayDate = function(){
+    //     console.log("Veeresh Kumar", Date.now());
+    // }
+
+    // setInterval(sayDate, 2000)  //here pass the reference of above function that is (sayName) 
+
+// *****************************************
+        
+    // const sayDate = function(greet){
+    //     console.log(greet, Date.now());
+    // }
+
+    // setInterval(sayDate, 2000, "Hello") 
+
+
+
+// *****************************************
+
+// Way to stop/clear setInterval()
+
+    // const sayDate = function(greet){
+    //     console.log(greet, Date.now());
+    // }
+
+    // const intervalId = setInterval(sayDate, 2000, "Hello")
+    
+    // clearInterval(intervalId)
+
+// *********************************************************************
+
+
+
+const sayDate = function(greet){
+        console.log(greet, Date.now());
+    }
+        let interVal;
+        document.querySelector('#start').addEventListener('click', function(){
+            interVal = setInterval(sayDate, 2000, "Hello")
+            console.log("STARTED")
+        })
+
+        document.querySelector('#stop').addEventListener('click', function(){
+        clearInterval(interVal)
+        console.log("STOPPED");
+
+        
+    })
+
+
+</script>
+</html>
