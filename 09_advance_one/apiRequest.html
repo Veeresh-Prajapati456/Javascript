@@ -1,0 +1,93 @@
+<!-- API: It is a talking language between two system (like backend and frontend)
+
+-- Famous Github API:- api.github.com/users/username   like(Veeresh-Prajapati456)
+                       randomuser.me
+
+To Understand the API Format because it's difficult to understand:
+         Use: JSON formatter -->
+
+
+<!-- ReadyState in  XMLHttpRequest-->
+
+<!--  Value	 State	            Description
+
+        0	 UNSENT	            Client has been created. open() not called yet.  OR   The request has been created but not opened yet.                            (means you did not sent the request yet, only client has been created)
+        1	 OPENED	            open() has been called.                                                       (means request has been sent)
+        2	 HEADERS_RECEIVED	send() has been called, and headers and status are available.                 (means headers found but status did not receive(data receive or not) , something is receive but don't know)
+        3	 LOADING	        The response is being downloaded (receiving data). OR  The request has been sent, and the headers have been received.      (means Response receive and how big data is, it is maintained by states)
+        4	 DONE	            The operation is complete, and the full response is available.                (means data out from this side, data found or not, and which response code found, it is your responsibility)
+
+        -->
+
+<!-- XMLHttpRequest (XHR) objects are used to interact with servers. You can retrieve data from a URL without having to do a full page refresh. This enables a Web page to update just part of a page without disrupting what the user is doing. -->
+
+<!-- XMLHttpRequest is an object in JavaScript -->
+
+<!-- XMLHttpRequest is a built-in feature in JavaScript that helps your web page communicate with a server. It can send requests (like asking for data) and handle responses (like getting that data back). -->
+
+<!-- For example, when you scroll through a feed, like on Instagram or Twitter, new posts load without refreshing the whole page. This happens because of tools like XMLHttpRequest. It sends a request to the server, gets the data, and updates the page without interrupting what you're doing. -->
+
+
+<!-- XMLHttpRequest allows data to be sent and received without refreshing the web page. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121;">
+    
+</body>
+<script>
+    // const requestUrl = 'https://api.github.com/users/Veeresh-Prajapati456'
+    // const xhr = new XMLHttpRequest()
+    // xhr.open('GET', requestUrl)               //this XMLHttpRequest.open() method have two parameters (method, string) //open() method is used to set up a network request(What type of request to make (like "GET" to fetch data or "POST" to send data).
+                                                // and Where to send the request (the URL of the server or API).)
+    // xhr.onreadystatechange = function(){     //This helps track the progress and handle different stages of the request.
+    //     console.log(xhr.readyState);
+    // }
+    // xhr.send()                            //if you want to send the rquest then yo will call the send() method.
+
+// ******************************************************************
+
+// To fetch data
+// const requestUrl = 'https://api.github.com/users/Veeresh-Prajapati456'
+//     const xhr = new XMLHttpRequest()
+//     xhr.open('GET', requestUrl)               //this XMLHttpRequest.open() method have two parameters (method, string) (method means which type of request you want to send: 'GET' or 'POST') 
+//     xhr.onreadystatechange = function(){     //This helps track the progress and handle different stages of the request.
+//         console.log(xhr.readyState);
+//         if(xhr.readyState === 4){
+//             console.log(this.responseText);  //when we talking about current context then we use use "this" 
+            
+//         }
+//     }
+//     xhr.send() 
+
+// **********************************************************************
+
+// To get single Object from Data in the form of JSON
+const requestUrl = 'https://api.github.com/users/Veeresh-Prajapati456'
+    const xhr = new XMLHttpRequest()
+    xhr.open('GET', requestUrl)               //this XMLHttpRequest.open() method have two parameters (method, string) (method means which type of request you want to send: 'GET' or 'POST') 
+    xhr.onreadystatechange = function(){     //This helps track the progress and handle different stages of the request.
+        console.log(xhr.readyState);
+        if(xhr.readyState === 4){
+            const data = JSON.parse(this.responseText)  //parse convert String into JSON
+            console.log(typeof data);  //to check typeof
+            console.log(data.followers);
+        }
+    }
+    xhr.send() 
+
+</script>
+</html>
+
+
+<!-- console.log, document.  and lot of APIs is not a part of Core JavaScript-->
+ <!-- console.log is a debugging tool , dev tool of browser-->
+
+ <!-- V8 Engine is Written in C++ 
+  and the most powerful thing is that, JavaScript actually run in C++  -->
