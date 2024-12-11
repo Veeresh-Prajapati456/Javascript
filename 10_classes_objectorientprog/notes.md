@@ -97,3 +97,6 @@ Person's Role Changes Based on Context
 #### Every function in JavaScript (except arrow functions) has a prototype property. This property is used when the function is used as a constructor
 
 #### Prototypes form the backbone of JavaScript’s object-oriented programming, even with modern syntax like class.
+
+---
+prototypal behavior is a feature of JavaScript, not its overall default behavior.
